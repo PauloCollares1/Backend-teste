@@ -8,8 +8,6 @@ import { mongodb_conection } from './databases/mongodb/mongoconnection.js';
 //import  { sequelize }  from './databases/mysql/mysqlconnections.js';
 import { route } from './routes.js';
 
-
-
 /* NOTA: Aqui eu crio meu MySQL, também presente no projeto, as chamadas são pratimanetes as mesmas
          Optei seguir com o mongoDB somente para puder publicar o projeto no meu portifólio, já que a
          mongoDB disponibiliza uma nuvem gratuita e a Mysql não...Localmente a arquitetura funciona igual 
@@ -30,4 +28,4 @@ app.use(express.json());
 app.use('/', route);
 
 // Server
-app.listen(5000 || process.env, () => {console.log("Server running...")})
+app.listen(5000 || process.env.PORT, () => {console.log("Server running...")})
