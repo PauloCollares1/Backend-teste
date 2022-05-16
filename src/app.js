@@ -28,4 +28,4 @@ app.use(express.json());
 app.use('/', route);
 
 // Server
-app.listen(5000 || process.env.PORT, () => {console.log("Server running...")})
+app.listen(process.env.PORT, () => {console.log("Server running...")})
